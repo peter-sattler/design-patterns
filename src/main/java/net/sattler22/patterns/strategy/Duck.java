@@ -15,6 +15,10 @@ abstract class Duck {
         this.flyStrategy = flyStrategy;
     }
 
+    protected Duck(Duck source, FlyStrategy flyStrategy) {
+        this(source.quackStrategy, flyStrategy);
+    }
+
     public void performFly() {
         flyStrategy.fly();
     }
