@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import net.jcip.annotations.Immutable;
 
 @Immutable
-public final class MuteQuack implements QuackStrategy {
+final class MuteQuack implements QuackStrategy {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MuteQuack.class);
 

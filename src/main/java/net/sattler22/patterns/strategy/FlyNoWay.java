@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import net.jcip.annotations.Immutable;
 
 @Immutable
-public final class FlyNoWay implements FlyStrategy {
+final class FlyNoWay implements FlyStrategy {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(FlyNoWay.class);
 

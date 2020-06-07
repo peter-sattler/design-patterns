@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import net.jcip.annotations.Immutable;
 
 @Immutable
-public final class ModelDuck extends Duck {
+final class ModelDuck extends Duck {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ModelDuck.class);
 

@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import net.jcip.annotations.Immutable;
 
 @Immutable
-public final class FlyRocketPowered implements FlyStrategy {
+final class FlyRocketPowered implements FlyStrategy {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(FlyRocketPowered.class);
 

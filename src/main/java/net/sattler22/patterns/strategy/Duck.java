@@ -19,17 +19,17 @@ abstract class Duck {
         this(source.quackStrategy, flyStrategy);
     }
 
-    public void performFly() {
+    void performFly() {
         flyStrategy.fly();
     }
 
-    public void performQuack() {
+    void performQuack() {
         quackStrategy.quack();
     }
 
-    public void swim() {
+    void swim() {
         LOGGER.info("All ducks float, even decoys!!!");
     }
 
-    public abstract void display();
+    abstract void display();
 }
