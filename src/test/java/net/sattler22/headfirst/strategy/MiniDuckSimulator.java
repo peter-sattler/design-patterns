@@ -19,7 +19,6 @@ import org.junit.jupiter.api.Test;
  *
  * @author Pete Sattler
  * @version June 2020
- *
  */
 final class MiniDuckSimulator {
 
