@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
  * Heads First (OO) Design Patterns - Chapter 1
  * <p>
  * Strategy Pattern: Defines a family of algorithms (behaviors), encapsulating each one and makes them interchangeable. Strategy
- *                   lets the algorithm vary independently from the clients that use it
+ *                   lets the algorithm vary independently from the clients that use it.
  * <p>
  * Lessons learned:
  * <ol>
