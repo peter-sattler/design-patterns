@@ -1,4 +1,4 @@
-package net.sattler22.patterns.strategy;
+package net.sattler22.headfirst.strategy;
 
 interface QuackStrategy {
     void quack();
