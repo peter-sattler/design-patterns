@@ -20,14 +20,12 @@ final class CurrentConditionsDisplay extends BaseDisplay {
 
     @Override
     public void update(Observable observable) {
-        if (observable instanceof WeatherData) {
-            final WeatherData weatherData = (WeatherData) observable;
+        if (observable instanceof final WeatherData weatherData)
             synchronized (lockObject) {
                 this.temperature = weatherData.getTemperature();
                 this.humidity = weatherData.getHumidity();
                 display();    //MVC would be better here!!!
             }
-        }
     }
 
     @Override

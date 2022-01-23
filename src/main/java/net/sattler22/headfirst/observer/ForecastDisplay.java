@@ -21,14 +21,12 @@ final class ForecastDisplay extends BaseDisplay {
 
     @Override
     public void update(Observable observable) {
-        if (observable instanceof WeatherData) {
-            final WeatherData weatherData = (WeatherData) observable;
+        if (observable instanceof final WeatherData weatherData)
             synchronized (lockObject) {
                 lastPressure = currentPressure;
                 currentPressure = weatherData.getPressure();
                 display();      //MVC would be better here!!!
             }
-        }
     }
 
     @Override
