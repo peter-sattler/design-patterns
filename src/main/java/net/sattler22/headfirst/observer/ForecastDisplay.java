@@ -8,7 +8,7 @@ import net.jcip.annotations.ThreadSafe;
 @ThreadSafe
 final class ForecastDisplay extends BaseDisplay {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ForecastDisplay.class);
+    private static final Logger logger = LoggerFactory.getLogger(ForecastDisplay.class);
     private static final String DISPLAY_TYPE = "Forecast";
     private volatile float currentPressure;
     private volatile float lastPressure;
@@ -32,10 +32,10 @@ final class ForecastDisplay extends BaseDisplay {
     @Override
     public void display() {
         if (currentPressure > lastPressure)
-            LOGGER.info("{}: Improving weather on the way!", DISPLAY_TYPE);
+            logger.info("{}: Improving weather on the way!", DISPLAY_TYPE);
         else if (currentPressure == lastPressure)
-            LOGGER.info("{}: More of the same", DISPLAY_TYPE);
+            logger.info("{}: More of the same", DISPLAY_TYPE);
         else if (currentPressure < lastPressure)
-            LOGGER.info("{}: Watch out for cooler, rainy weather", DISPLAY_TYPE);
+            logger.info("{}: Watch out for cooler, rainy weather", DISPLAY_TYPE);
     }
 }

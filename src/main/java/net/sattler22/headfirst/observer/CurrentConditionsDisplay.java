@@ -8,7 +8,7 @@ import net.jcip.annotations.ThreadSafe;
 @ThreadSafe
 final class CurrentConditionsDisplay extends BaseDisplay {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CurrentConditionsDisplay.class);
+    private static final Logger logger = LoggerFactory.getLogger(CurrentConditionsDisplay.class);
     private volatile float temperature;
     private volatile float humidity;
     private final Object lockObject = new Object();
@@ -30,6 +30,6 @@ final class CurrentConditionsDisplay extends BaseDisplay {
 
     @Override
     public void display() {
-        LOGGER.info("Current Conditions: {}F degrees and humidity {}%", temperature, humidity);
+        logger.info("Current Conditions: {}F degrees and humidity {}%", temperature, humidity);
     }
 }

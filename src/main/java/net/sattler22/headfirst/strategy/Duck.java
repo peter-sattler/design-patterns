@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 abstract class Duck {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Duck.class);
+    private static final Logger logger = LoggerFactory.getLogger(Duck.class);
 
     protected final QuackStrategy quackStrategy;
     protected final FlyStrategy flyStrategy;
@@ -28,7 +28,7 @@ abstract class Duck {
     }
 
     void swim() {
-        LOGGER.info("All ducks float, even decoys!!!");
+        logger.info("All ducks float, even decoys!!!");
     }
 
     abstract void display();

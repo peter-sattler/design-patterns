@@ -8,10 +8,10 @@ import net.jcip.annotations.Immutable;
 @Immutable
 final class Squeak implements QuackStrategy {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Squeak.class);
+    private static final Logger logger = LoggerFactory.getLogger(Squeak.class);
 
     @Override
     public void quack() {
-        LOGGER.info("Squeak");
+        logger.info("Squeak");
     }
 }

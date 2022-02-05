@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
  */
 final class LowerCaseInputStreamTest {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(LowerCaseInputStreamTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(LowerCaseInputStreamTest.class);
     private static final String DECORATOR_INPUT_FILE = "decorator-io.txt";
 
     @Test
@@ -33,7 +33,7 @@ final class LowerCaseInputStreamTest {
             final var result = new StringBuilder();
             while ((c = inputStream.read()) >= 0)
                 result.append((char) c);
-            LOGGER.info(result.toString());
+            logger.info(result.toString());
             assertTrue(true);  //SonarLint
         }
     }

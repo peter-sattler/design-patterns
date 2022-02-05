@@ -5,10 +5,10 @@ import org.slf4j.LoggerFactory;
 
 final class FlyWithWings implements FlyStrategy {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(FlyWithWings.class);
+    private static final Logger logger = LoggerFactory.getLogger(FlyWithWings.class);
 
     @Override
     public void fly() {
-        LOGGER.info("I'm flying!!!");
+        logger.info("I'm flying!!!");
     }
 }

@@ -8,7 +8,7 @@ import net.jcip.annotations.ThreadSafe;
 @ThreadSafe
 final class HeatIndexDisplay extends BaseDisplay {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(HeatIndexDisplay.class);
+    private static final Logger logger = LoggerFactory.getLogger(HeatIndexDisplay.class);
     private volatile float heatIndex = 0.0f;
     private final Object lockObject = new Object();
 
@@ -47,6 +47,6 @@ final class HeatIndexDisplay extends BaseDisplay {
 
     @Override
     public void display() {
-        LOGGER.info("Heat index: {}", heatIndex);
+        logger.info("Heat index: {}", heatIndex);
     }
 }

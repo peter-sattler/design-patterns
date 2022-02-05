@@ -8,10 +8,10 @@ import net.jcip.annotations.Immutable;
 @Immutable
 final class FlyRocketPowered implements FlyStrategy {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(FlyRocketPowered.class);
+    private static final Logger logger = LoggerFactory.getLogger(FlyRocketPowered.class);
 
     @Override
     public void fly() {
-        LOGGER.info("I'm flying with a rocket!!!");
+        logger.info("I'm flying with a rocket!!!");
     }
 }

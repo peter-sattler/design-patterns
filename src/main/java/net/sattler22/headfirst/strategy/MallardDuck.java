@@ -8,7 +8,7 @@ import net.jcip.annotations.Immutable;
 @Immutable
 final class MallardDuck extends Duck {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MallardDuck.class);
+    private static final Logger logger = LoggerFactory.getLogger(MallardDuck.class);
 
     public MallardDuck() {
         super(new Quack(), new FlyWithWings());
@@ -16,6 +16,6 @@ final class MallardDuck extends Duck {
 
     @Override
     public void display() {
-        LOGGER.info("I'm a real Mallard duck");
+        logger.info("I'm a real Mallard duck");
     }
 }

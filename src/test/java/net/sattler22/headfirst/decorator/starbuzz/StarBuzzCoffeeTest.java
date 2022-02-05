@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
  */
 final class StarBuzzCoffeeTest {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(StarBuzzCoffeeTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(StarBuzzCoffeeTest.class);
 
     @Test
     void expressoNoCondiments() {
@@ -46,6 +46,6 @@ final class StarBuzzCoffeeTest {
     }
 
     private static void logIt(Beverage beverage) {
-        LOGGER.info("{}: ${}", beverage.getDescription(), beverage.cost());
+        logger.info("{}: ${}", beverage.getDescription(), beverage.cost());
     }
 }

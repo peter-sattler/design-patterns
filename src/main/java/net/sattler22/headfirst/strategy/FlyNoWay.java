@@ -8,10 +8,10 @@ import net.jcip.annotations.Immutable;
 @Immutable
 final class FlyNoWay implements FlyStrategy {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(FlyNoWay.class);
+    private static final Logger logger = LoggerFactory.getLogger(FlyNoWay.class);
 
     @Override
     public void fly() {
-        LOGGER.info("I can't fly");
+        logger.info("I can't fly");
     }
 }

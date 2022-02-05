@@ -11,7 +11,7 @@ import net.jcip.annotations.ThreadSafe;
 @ThreadSafe
 final class StatisticsDisplay extends BaseDisplay {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(StatisticsDisplay.class);
+    private static final Logger logger = LoggerFactory.getLogger(StatisticsDisplay.class);
     private volatile float maxTemp = MIN_VALUE;
     private volatile float minTemp = MAX_VALUE;
     private volatile float tempSum = 0f;
@@ -41,6 +41,6 @@ final class StatisticsDisplay extends BaseDisplay {
 
     @Override
     public void display() {
-        LOGGER.info("Avg/Max/Min temperature: {} / {} / {}", (tempSum / numReadings), maxTemp, minTemp);
+        logger.info("Avg/Max/Min temperature: {} / {} / {}", (tempSum / numReadings), maxTemp, minTemp);
     }
 }

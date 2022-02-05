@@ -8,10 +8,10 @@ import net.jcip.annotations.Immutable;
 @Immutable
 final class MuteQuack implements QuackStrategy {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MuteQuack.class);
+    private static final Logger logger = LoggerFactory.getLogger(MuteQuack.class);
 
     @Override
     public void quack() {
-        LOGGER.info("<<Silence>>");
+        logger.info("<<Silence>>");
     }
 }
