@@ -14,6 +14,7 @@ import org.slf4j.LoggerFactory;
  * Heads First (OO) Design Patterns - Chapter 3 (Decorator Pattern)
  * <p>
  * Extend the <code>java.io</code> classes with our own decorator!!!
+ * </p>
  *
  * @author Pete Sattler
  * @version January 2022

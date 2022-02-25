@@ -4,6 +4,7 @@ package net.sattler22.headfirst.observer;
  * Observable (Subject) Interface
  * <p>
  * NOTE: The <code>java.util.Observable</code> class has been deprecated since Java 9.
+ * </p>
  *
  * @author Pete Sattler
  * @version June 2020

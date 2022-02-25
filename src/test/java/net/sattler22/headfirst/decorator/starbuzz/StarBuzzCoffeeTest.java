@@ -11,11 +11,13 @@ import org.slf4j.LoggerFactory;
  * <p>
  * Decorator Pattern: Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative
  *                    to subclassing for extending functionality.
+ * </p>
  * <p>
  * Lessons learned:
  * <ol>
  * <li>OO Design Principle #5: Classes should be open for extension, but closed for modification</li>
  * </ol>
+ * </p>
  *
  * @author Pete Sattler
  * @version January 2022

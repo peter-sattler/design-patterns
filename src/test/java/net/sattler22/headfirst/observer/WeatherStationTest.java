@@ -9,11 +9,13 @@ import org.junit.jupiter.api.Test;
  * <p>
  * Observer Pattern: Defines a one-to-many dependency between objects so that when one object changes state, all its
  *                   dependents are notified and updated automatically.
+ * </p>
  * <p>
  * Lessons learned:
  * <ol>
  * <li>OO Design Principle #4: Strive for loosely coupled designs between objects that interact.</li>
  * </ol>
+ * </p>
  *
  * @author Pete Sattler
  * @version January 2022

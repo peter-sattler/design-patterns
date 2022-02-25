@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
  * <p>
  * Strategy Pattern: Defines a family of algorithms (behaviors), encapsulating each one and makes them interchangeable. Strategy
  *                   lets the algorithm vary independently from the clients that use it.
+ * </p>
  * <p>
  * Lessons learned:
  * <ol>
@@ -18,6 +19,7 @@ import org.junit.jupiter.api.Test;
  * <li>OO Design Principle #2: Program to an interface, not an implementation.</li>
  * <li>OO Design Principle #3: Favor composition over inheritance.</li>
  * </ol>
+ * </p>
  *
  * @author Pete Sattler
  * @version January 2022
