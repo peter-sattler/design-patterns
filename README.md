@@ -9,7 +9,7 @@ Strategy Pattern  |       1 | Defines a family of algorithms (behaviors), encaps
 Observer Pattern  |       2 | Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically
 Decorator Pattern |       3 | Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
- ## Lessons Learned
+## Lessons Learned
 1. The one constant in software development is CHANGE.
 2. OO Design Principle #1: Identify the aspects of your application that vary and separate them from what stays the same. In other words, take what varies and encapsulate it so it won't affect the rest of your code.
 3. OO Design Principle #2: Program to an interface, not an implementation.
@@ -18,5 +18,5 @@ Decorator Pattern |       3 | Attach additional responsibilities to an object dy
 6. OO Design Principle #5: Classes should be open for extension, but closed for modification.
 
 Pete Sattler  
-30 May 2020  
+26 December 2022  
 _peter@sattler22.net_  
