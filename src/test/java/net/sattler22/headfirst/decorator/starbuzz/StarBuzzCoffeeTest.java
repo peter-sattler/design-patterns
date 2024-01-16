@@ -1,10 +1,10 @@
 package net.sattler22.headfirst.decorator.starbuzz;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Heads First (OO) Design Patterns - Chapter 3

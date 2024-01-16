@@ -1,8 +1,8 @@
 package net.sattler22.headfirst.observer;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Heads First (OO) Design Patterns - Chapter 2

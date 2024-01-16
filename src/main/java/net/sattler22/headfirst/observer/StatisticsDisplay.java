@@ -1,19 +1,15 @@
 package net.sattler22.headfirst.observer;
 
-import static java.lang.Float.MAX_VALUE;
-import static java.lang.Float.MIN_VALUE;
-
+import net.jcip.annotations.ThreadSafe;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import net.jcip.annotations.ThreadSafe;
 
 @ThreadSafe
 final class StatisticsDisplay extends BaseDisplay {
 
     private static final Logger logger = LoggerFactory.getLogger(StatisticsDisplay.class);
-    private volatile float maxTemp = MIN_VALUE;
-    private volatile float minTemp = MAX_VALUE;
+    private volatile float maxTemp = Float.MIN_VALUE;
+    private volatile float minTemp = Float.MAX_VALUE;
     private volatile float tempSum = 0f;
     private volatile int numReadings = 0;
     private final Object lockObject = new Object();
