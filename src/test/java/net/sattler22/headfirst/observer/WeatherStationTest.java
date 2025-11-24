@@ -24,11 +24,11 @@ final class WeatherStationTest {
 
     @Test
     void testAllDisplays() {
-        final var weatherData = new WeatherData();
-        final var currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
-        final var statisticsDisplay = new StatisticsDisplay(weatherData);
-        final var forecastDisplay = new ForecastDisplay(weatherData);
-        final var heatIndexDisplay = new HeatIndexDisplay(weatherData);
+        final WeatherData weatherData = new WeatherData();
+        final CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
+        final StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
+        final ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+        final HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherData);
         weatherData.setMeasurements(80, 65, 30.4f);
         weatherData.setMeasurements(82,  70,  29.2f);
         weatherData.setMeasurements(78, 90, 29.2f);

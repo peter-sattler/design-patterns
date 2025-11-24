@@ -28,7 +28,7 @@ final class MiniDuckSimulatorTest {
 
     @Test
     void testMallardDuck() {
-        final var duck = new MallardDuck();
+        final Duck duck = new MallardDuck();
         duck.display();
         duck.swim();
         duck.performQuack();
@@ -38,13 +38,13 @@ final class MiniDuckSimulatorTest {
 
     @Test
     void testModelDuck() {
-        final var duck1 = new ModelDuck();
+        final Duck duck1 = new ModelDuck();
         duck1.display();
         duck1.swim();
         duck1.performQuack();
         duck1.performFly();
         //NOTE: Use Copy CTOR since classes are immutable!!!
-        final var duck2 = new ModelDuck(duck1, new FlyRocketPowered());
+        final Duck duck2 = new ModelDuck(duck1, new FlyRocketPowered());
         duck2.display();
         duck2.swim();
         duck2.performQuack();

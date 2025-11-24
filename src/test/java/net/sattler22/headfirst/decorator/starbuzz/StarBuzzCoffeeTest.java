@@ -28,21 +28,21 @@ final class StarBuzzCoffeeTest {
 
     @Test
     void expressoNoCondiments() {
-        final var beverage = new Expresso();
+        final Beverage beverage = new Expresso();
         logIt(beverage);
         assertTrue(true);  //SonarLint
     }
 
     @Test
     void darkRoastDoubleMochaWithWhip() {
-        final var beverage = new Whip(new Mocha(new Mocha(new DarkRoast())));
+        final Beverage beverage = new Whip(new Mocha(new Mocha(new DarkRoast())));
         logIt(beverage);
         assertTrue(true);  //SonarLint
     }
 
     @Test
     void houseBlendWithSoyMochaAndWhip() {
-        final var beverage = new Whip(new Mocha(new Soy(new HouseBlend())));
+        final Beverage beverage = new Whip(new Mocha(new Soy(new HouseBlend())));
         logIt(beverage);
         assertTrue(true);  //SonarLint
     }

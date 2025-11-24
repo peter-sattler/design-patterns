@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import java.io.BufferedInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -26,12 +27,12 @@ final class LowerCaseInputStreamTest {
 
     @Test
     void testDecorator() throws IOException {
-        final var inputFile = getClass().getClassLoader().getResourceAsStream(DECORATOR_INPUT_FILE);
+        final InputStream inputFile = getClass().getClassLoader().getResourceAsStream(DECORATOR_INPUT_FILE);
         if (inputFile == null)
             throw new FileNotFoundException(String.format("Decorator input file [%s] not found", DECORATOR_INPUT_FILE));
-        try (final var inputStream = new LowerCaseInputStream(new BufferedInputStream(inputFile))) {
+        try (final LowerCaseInputStream inputStream = new LowerCaseInputStream(new BufferedInputStream(inputFile))) {
             int c;
-            final var result = new StringBuilder();
+            final StringBuilder result = new StringBuilder();
             while ((c = inputStream.read()) >= 0)
                 result.append((char) c);
             logger.info(result.toString());

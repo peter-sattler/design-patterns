@@ -22,7 +22,7 @@ final class StatisticsDisplay extends BaseDisplay {
     @Override
     public void update(Observable observable) {
         if (observable instanceof final WeatherData weatherData) {
-            final var temperature = weatherData.getTemperature();
+            final float temperature = weatherData.getTemperature();
             synchronized (lockObject) {
                 tempSum += temperature;
                 numReadings++;

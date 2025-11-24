@@ -19,8 +19,8 @@ final class HeatIndexDisplay extends BaseDisplay {
     @Override
     public void update(Observable observable) {
         if (observable instanceof final WeatherData weatherData) {
-            final var temperature = weatherData.getTemperature();
-            final var humidity = weatherData.getHumidity();
+            final float temperature = weatherData.getTemperature();
+            final float humidity = weatherData.getHumidity();
             synchronized (lockObject) {
                 heatIndex = (float)
                         (

@@ -32,7 +32,7 @@ final class WeatherData implements Observable {
     @Override
     public void notifyObservers() {
         synchronized (lockObject) {
-            for (final var observer : observers)
+            for (final Observer observer : observers)
                 observer.update(this);
         }
     }
